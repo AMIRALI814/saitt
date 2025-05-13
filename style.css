@@ -1,0 +1,139 @@
+/* تنظیمات کلی */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.8;
+  padding: 20px;
+  direction: rtl; /* متون راست به چپ */
+}
+
+/* هدر */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5em; /* فونت بزرگتر */
+  margin-bottom: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em; /* فونت بزرگتر */
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #4CAF50;
+}
+
+/* اسلایدر */
+#slider {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* بخش‌ها */
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  font-size: 2.2em; /* فونت بزرگتر */
+  text-align: center; /* تیتر وسط چین */
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #f8f8f8;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2em; /* فونت بزرگتر */
+}
+
+ul li:hover {
+  background-color: #e0e0e0;
+}
+
+/* فوتر */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  font-size: 1.2em; /* فونت بزرگتر */
+}
+
+/* انیمیشن */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+}

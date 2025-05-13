@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سایت اطلاعات عمومی</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="fade-in">سایت اطلاعات عمومی</h1>
+      <nav>
+        <a href="#about">درباره ما</a>
+        <a href="#facts">حقایق جالب</a>
+        <a href="#contact">تماس با ما</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="slider" class="section">
+    <div class="container">
+      <h2 class="fade-in">تصاویر متحرک</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="https://via.placeholder.com/1200x500/ff7f7f/333333?text=تصویر+1" alt="تصویر 1"></div>
+          <div class="slide"><img src="https://via.placeholder.com/1200x500/7f7fff/333333?text=تصویر+2" alt="تصویر 2"></div>
+          <div class="slide"><img src="https://via.placeholder.com/1200x500/7fff7f/333333?text=تصویر+3" alt="تصویر 3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>درباره ما</h2>
+      <p>این سایت به شما اطلاعات جالب و مفید در زمینه‌های مختلف را ارائه می‌دهد. هدف ما اشتراک‌گذاری دانسته‌ها و معرفی موضوعات جالب است.</p>
+    </div>
+  </section>
+
+  <section id="facts" class="section fade-in">
+    <div class="container">
+      <h2>حقایق جالب</h2>
+      <ul>
+        <li>زمین تنها سیاره‌ای است که در آن زندگی وجود دارد.</li>
+        <li>شترها می‌توانند تا ۸ روز بدون نوشیدن آب زنده بمانند.</li>
+        <li>آب گرم از آب سرد سبک‌تر است.</li>
+        <li>ماهی‌ها می‌توانند بدون خوابیدن زنده بمانند.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>تماس با ما</h2>
+      <p>برای تماس با ما، لطفاً از طریق ایمیل زیر ارتباط برقرار کنید:</p>
+      <p><a href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 سایت اطلاعات عمومی. تمام حقوق محفوظ است.</p>
+  </footer>
+
+  <script>
+    // اسلایدر با جاوااسکریپت
+    let slideIndex = 0;
+    function showSlides() {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // تغییر تصویر هر 3 ثانیه
+    }
+    showSlides();
+  </script>
+
+</body>
+</html>
