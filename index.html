@@ -1,158 +1,217 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>سایت اطلاعات عمومی</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-
     body {
       font-family: 'Vazirmatn', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f9fc;
+      background: #f4f4f4;
       color: #222;
-      line-height: 1.8;
+      line-height: 2.2;
     }
-
     header {
-      background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+      background: linear-gradient(90deg, #2c3e50, #3498db);
       color: white;
-      padding: 20px 0;
+      padding: 30px 0;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
     nav {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
-      background: #eee;
-      padding: 10px 0;
+      justify-content: center;
+      background: #ddd;
+      padding: 10px;
     }
-
     nav a {
-      color: #333;
       text-decoration: none;
+      color: #333;
+      margin: 0 15px;
       font-weight: bold;
     }
-
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 30px auto;
       padding: 0 20px;
     }
-
-    .section {
-      margin-bottom: 60px;
-      animation: fadein 1s ease-in-out;
-    }
-
-    h2 {
-      text-align: center;
-      color: #3f51b5;
-      font-size: 28px;
-    }
-
-    .section img {
-      width: 100%;
-      border-radius: 12px;
-      margin-top: 15px;
-    }
-
-    .contact {
-      background: #e3f2fd;
+    section {
+      margin-bottom: 40px;
+      background: white;
       padding: 20px;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadein 0.8s ease-in;
     }
-
-    footer {
-      background: #3f51b5;
-      color: white;
+    h2, h3 {
       text-align: center;
-      padding: 15px 0;
+      color: #2980b9;
+    }
+    img {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
       margin-top: 40px;
     }
-
+    .contact a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    ul {
+      padding-right: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
     @keyframes fadein {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>سایت اطلاعات عمومی</h1>
   </header>
-
   <nav>
-    <a href="index.html">صفحه اصلی</a>
-    <a href="about.html">درباره ما</a>
-    <a href="#technology">تکنولوژی</a>
+    <a href="#tech">تکنولوژی</a>
     <a href="#nature">طبیعت</a>
     <a href="#space">نجوم</a>
-    <a href="#history">تاریخ</a>
     <a href="#health">سلامت</a>
-    <a href="#art">هنر</a>
-    <a href="#culture">فرهنگ</a>
+    <a href="#animals">حیوانات</a>
+    <a href="#contact">ارتباط</a>
   </nav>
-
   <div class="container">
-    <section id="technology" class="section">
+    <section id="tech">
       <h2>تکنولوژی</h2>
-      <p>تکنولوژی زندگی ما را تغییر داده است، از گوشی‌های هوشمند گرفته تا هوش مصنوعی و اینترنت اشیا. امروزه دنیای ما بیشتر از هر زمان دیگری به این پیشرفت‌ها وابسته است.</p>
-      <img src="https://source.unsplash.com/800x400/?technology" alt="تکنولوژی">
-    </section>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Technology-Devices.jpg" alt="تکنولوژی">
+      <ul>
+        <li>اولین رایانه در سال ۱۹۴۶ ساخته شد و نام آن ENIAC بود.</li>
+        <li>گوگل ابتدا پروژه‌ای دانشجویی بود که در گاراژ شکل گرفت.</li>
+        <li>الگوریتم‌ها پایهٔ عملکرد هوش مصنوعی هستند.</li>
+        <li>اولین گوشی آیفون در سال ۲۰۰۷ معرفی شد.</li>
+        <li>دوربین دیجیتال از دهه ۱۹۷۰ در حال توسعه بود.</li>
+        <li>پردازنده‌های مدرن حاوی میلیاردها ترانزیستور هستند.</li>
+        <li>ربات‌های انسان‌نما می‌توانند احساسات را تشخیص دهند.</li>
+        <li>ابر رایانه‌ها توانایی شبیه‌سازی مغز را دارند.</li>
+        <li>تکنولوژی بلاک‌چین فقط مختص رمزارزها نیست.</li>
+        <li>فناوری نانو در پزشکی کاربردهای گسترده‌ای دارد.</li>
+        <li>ساعت‌های هوشمند سلامتی را پایش می‌کنند.</li>
+        <li>وسایل خانگی هوشمند با دستیار صوتی کنترل می‌شوند.</li>
+        <li>هواپیماهای بدون سرنشین (پهپادها) در کشاورزی کاربرد دارند.</li>
+        <li>کوانتوم کامپیوترها آیندهٔ پردازش اطلاعات هستند.</li>
+        <li>اینترنت پرسرعت نسل پنجم در حال گسترش جهانی است.</li>
+      </ul>
+    </section><section id="nature">
+  <h2>طبیعت</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Nature_landscape.jpg" alt="طبیعت">
+  <ul>
+    <li>بعضی درختان هزاران سال عمر می‌کنند مانند درخت متوسلاه.</li>
+    <li>آبشار آنجل بلندترین آبشار دنیاست با ارتفاع ۹۷۹ متر.</li>
+    <li>شفق قطبی تنها در قطب‌ها قابل مشاهده است.</li>
+    <li>در کوهستان آند، گیاهانی یافت می‌شود که در هیچ جای دیگر دنیا وجود ندارند.</li>
+    <li>توفان‌های شن می‌توانند قاره‌ها را تحت تأثیر قرار دهند.</li>
+	<li>زمین‌لرزه‌های بزرگ می‌توانند زمان چرخش زمین را تغییر دهند.</li>
+    <li>رود نیل طولانی‌ترین رود جهان است.</li>
+    <li>آتش‌فشان‌های خاموش هنوز هم می‌توانند فعال شوند.</li>
+    <li>برخی گونه‌های قارچ دارای خواص دارویی هستند.</li>
+    <li>جنگل‌های استوایی نیمی از گونه‌های زنده جهان را در خود دارند.</li>
+    <li>دریاچه ناترون اجساد حیوانات را مومیایی می‌کند.</li>
+    <li>برخی حیوانات در بیابان با نوشیدن شبنم زنده می‌مانند.</li>
+    <li>کوه رنگین‌کمانی پرو نتیجهٔ مواد معدنی گوناگون است.</li>
+    <li>برخی گیاهان قادرند در محیط کاملاً شور رشد کنند.</li>
+    <li>درخت بائوباب تا ۱۲۰ هزار لیتر آب در خود ذخیره می‌کند.</li>
+  </ul>
+</section>
 
-    <section id="nature" class="section">
-      <h2>طبیعت</h2>
-      <p>جهان طبیعی پر از زیبایی‌های خیره‌کننده است، از جنگل‌های انبوه تا حیات‌وحش بی‌نظیر. طبیعت زیبا به ما یادآوری می‌کند که زندگی ساده و اصیل هم می‌تواند شگفت‌انگیز باشد.</p>
-      <img src="https://source.unsplash.com/800x400/?nature" alt="طبیعت">
-    </section>
+<section id="space">
+  <h2>نجوم</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Starsinthesky.jpg" alt="نجوم">
+  <ul>
+    <li>خورشید ۹۹.۸٪ از جرم کل منظومه شمسی را تشکیل می‌دهد.</li>
+    <li>صدای فضا در خلأ قابل شنیدن نیست.</li>
+    <li>ماه از زمین به اندازه یک توپ بسکتبال در ۷ متر است.</li>
+    <li>سیاه‌چاله‌ها نوری از خود عبور نمی‌دهند.</li>
+    <li>زحل دارای حلقه‌های یخی زیبا است.</li>
+    <li>مشتری بزرگ‌ترین سیاره منظومه شمسی است.</li>
+    <li>فضاپیماها با سرعت چند کیلومتر بر ثانیه حرکت می‌کنند.</li>
+    <li>ستارگان میلیاردها سال عمر دارند.</li>
+    <li>ستاره‌ای به نام بیتل‌جوس در حال مرگ است.</li>
+    <li>کهکشان راه‌شیری حدود ۱۰۰ میلیارد ستاره دارد.</li>
+    <li>سیارات فراخورشیدی هر روز کشف می‌شوند.</li>
+    <li>جهان در حال انبساط است.</li>
+    <li>فضانوردان استخوان و عضله خود را در فضا از دست می‌دهند.</li>
+    <li>نخستین ماه‌نورد در ۱۹۶۹ فرود آمد.</li>
+    <li>مریخ دارای قطب‌های یخی مشابه زمین است.</li>
+  </ul>
+</section>
 
-    <section id="space" class="section">
-      <h2>نجوم</h2>
-      <p>کاوش در فضا یکی از هیجان‌انگیزترین ماجراجویی‌های بشر است. از سیارات دیگر گرفته تا کهکشان‌های دور، انسان همواره به دنبال کشف رازهای هستی بوده است.</p>
-      <img src="https://source.unsplash.com/800x400/?space" alt="فضا">
-    </section>
+<section id="health">
+  <h2>سلامت</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Healthy_Living.jpg" alt="سلامت">
+  <ul>
+    <li>قلب انسان روزانه حدود ۱۰۰ هزار بار می‌تپد.</li>
+    <li>بدن از بیش از ۳۷ تریلیون سلول تشکیل شده است.</li>
+    <li>خواب کافی برای ترمیم مغز ضروری است.</li>
+    <li>آب بدن حدود ۶۰ درصد وزن انسان را تشکیل می‌دهد.</li>
+    <li>ورزش منظم سیستم ایمنی را تقویت می‌کند.</li>
+    <li>استرس مزمن با بیماری‌های قلبی مرتبط است.</li>
+    <li>مواد غذایی رنگارنگ و طبیعی مفیدترین غذاها هستند.</li>
+    <li>نور خورشید ویتامین D تولید می‌کند.</li>
+    <li>مغز تنها ۲٪ از وزن بدن است اما ۲۰٪ انرژی را مصرف می‌کند.</li>
+    <li>راه رفتن روزانه باعث افزایش طول عمر می‌شود.</li>
+    <li>موز حاوی ماده‌ای شادی‌آور به نام تریپتوفان است.</li>
+    <li>آب کافی باعث شفافیت پوست می‌شود.</li>
+    <li>نوشیدن چای سبز با کاهش وزن مرتبط است.</li>
+    <li>چرت کوتاه تمرکز را افزایش می‌دهد.</li>
+    <li>تنفس عمیق به کاهش اضطراب کمک می‌کند.</li>
+  </ul>
+</section>
 
-    <section id="history" class="section">
-      <h2>تاریخ</h2>
-      <p>مطالعه تاریخ به ما کمک می‌کند تا گذشته را بفهمیم و از اشتباهات گذشته درس بگیریم. تاریخ بشریت پر از داستان‌های شگفت‌انگیز و آموزنده است.</p>
-      <img src="https://source.unsplash.com/800x400/?history" alt="تاریخ">
-    </section>
+<section id="animals">
+  <h2>حیوانات</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Lion_waiting_in_Namibia.jpg" alt="حیوانات">
+  <ul>
+    <li>اختاپوس سه قلب دارد و خون آن آبی است.</li>
+    <li>پروانه‌ها با پاهای خود مزه را تشخیص می‌دهند.</li>
+    <li>فیل‌ها نمی‌توانند بپرند.</li>
+    <li>چیتا سریع‌ترین حیوان زمینی است.</li>
+    <li>خفاش‌ها تنها پستانداران پروازکننده‌اند.</li>
+    <li>کوسه‌ها هزاران دندان در طول عمر خود دارند.</li>
+    <li>اسب‌ها ایستاده می‌خوابند.</li>
+    <li>زرافه‌ها هیچ صدایی ندارند.</li>
+    <li>گربه‌ها در تاریکی بهتر از انسان می‌بینند.</li>
+    <li>پرندگان برخی زبان انسان را تقلید می‌کنند.</li>
+    <li>مارها پلک ندارند و همیشه چشمانشان باز است.</li>
+    <li>دلفین‌ها با امواج صوتی ارتباط برقرار می‌کنند.</li>
+    <li>سگ‌ها بوی بیماری‌ها را تشخیص می‌دهند.</li>
+    <li>مورچه‌ها ساختار اجتماعی پیچیده‌ای دارند.</li>
+    <li>لاک‌پشت‌ها می‌توانند بیش از ۱۰۰ سال عمر کنند.</li>
+  </ul>
+</section>
 
-    <section id="health" class="section">
-      <h2>سلامت</h2>
-      <p>سلامت جسمی و روانی دو ستون اصلی زندگی سال ورزش، تغذیه مناسب و آرامش ذهنی می‌توانند کیفیت زندگی را به طور چشمگیری بهبود بخشند.</p>
-      <img src="https://source.unsplash.com/800x400/?health" alt="سلامت">
-    </section>
+<section id="contact" class="contact">
+  <h2>تماس با ما</h2>
+  <p>اگر سوال یا نظری دارید، با ما در ارتباط باشید:</p>
+  <a href="mailto:amirali.zarei.2689@gmail.com">ارسال ایمیل</a>
+</section>
 
-    <section id="art" class="section">
-      <h2>هنر</h2>
-      <p>هنر راهی برای بیان احساسات انسان است؛ از نقاشی و موسیقی گرفته تا سینما و تئاتر، هنر می‌تواند پیامی از درون انسان‌ها به دنیا ارسال کند.</p>
-      <img src="https://source.unsplash.com/800x400/?art" alt="هنر">
-    </section>
-	<section id="culture" class="section">
-      <h2>فرهنگ</h2>
-      <p>فرهنگ بازتاب‌دهنده باورها، آداب و رسوم، و تاریخ یک ملت است. هر فرهنگی ارزش‌های خاص خود را دارد که در شکل‌دهی به جامعه تأثیرگذار است.</p>
-      <img src="https://source.unsplash.com/800x400/?culture" alt="فرهنگ">
-    </section>
-
-    <section class="contact section">
-      <h2>تماس با ما</h2>
-      <p>برای ارتباط با ما، با ایمیل زیر تماس بگیرید:</p>
-      <p><strong>amirali.zarei.2689@gmail.com</strong></p>
-    </section>
   </div>
-
   <footer>
-    <p>© تمامی حقوق محفوظ است</p>
+    © تمامی حقوق متعلق به شماست.
   </footer>
 </body>
 </html>
