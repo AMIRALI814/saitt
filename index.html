@@ -1,84 +1,158 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>سایت اطلاعات عمومی</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background: #eee;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      animation: fadein 1s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3f51b5;
+      font-size: 28px;
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    .contact {
+      background: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @keyframes fadein {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <div class="container">
-      <h1 class="fade-in">سایت اطلاعات عمومی</h1>
-      <nav>
-        <a href="#about">درباره ما</a>
-        <a href="#facts">حقایق جالب</a>
-        <a href="#contact">تماس با ما</a>
-      </nav>
-    </div>
+    <h1>سایت اطلاعات عمومی</h1>
   </header>
 
-  <section id="slider" class="section">
-    <div class="container">
-      <h2 class="fade-in">تصاویر متحرک</h2>
-      <div class="slider">
-        <div class="slides">
-          <div class="slide"><img src="https://via.placeholder.com/1200x500/ff7f7f/333333?text=تصویر+1" alt="تصویر 1"></div>
-          <div class="slide"><img src="https://via.placeholder.com/1200x500/7f7fff/333333?text=تصویر+2" alt="تصویر 2"></div>
-          <div class="slide"><img src="https://via.placeholder.com/1200x500/7fff7f/333333?text=تصویر+3" alt="تصویر 3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <nav>
+    <a href="index.html">صفحه اصلی</a>
+    <a href="about.html">درباره ما</a>
+    <a href="#technology">تکنولوژی</a>
+    <a href="#nature">طبیعت</a>
+    <a href="#space">نجوم</a>
+    <a href="#history">تاریخ</a>
+    <a href="#health">سلامت</a>
+    <a href="#art">هنر</a>
+    <a href="#culture">فرهنگ</a>
+  </nav>
 
-  <section id="about" class="section fade-in">
-    <div class="container">
-      <h2>درباره ما</h2>
-      <p>این سایت به شما اطلاعات جالب و مفید در زمینه‌های مختلف را ارائه می‌دهد. هدف ما اشتراک‌گذاری دانسته‌ها و معرفی موضوعات جالب است.</p>
-    </div>
-  </section>
+  <div class="container">
+    <section id="technology" class="section">
+      <h2>تکنولوژی</h2>
+      <p>تکنولوژی زندگی ما را تغییر داده است، از گوشی‌های هوشمند گرفته تا هوش مصنوعی و اینترنت اشیا. امروزه دنیای ما بیشتر از هر زمان دیگری به این پیشرفت‌ها وابسته است.</p>
+      <img src="https://source.unsplash.com/800x400/?technology" alt="تکنولوژی">
+    </section>
 
-  <section id="facts" class="section fade-in">
-    <div class="container">
-      <h2>حقایق جالب</h2>
-      <ul>
-        <li>زمین تنها سیاره‌ای است که در آن زندگی وجود دارد.</li>
-        <li>شترها می‌توانند تا ۸ روز بدون نوشیدن آب زنده بمانند.</li>
-        <li>آب گرم از آب سرد سبک‌تر است.</li>
-        <li>ماهی‌ها می‌توانند بدون خوابیدن زنده بمانند.</li>
-      </ul>
-    </div>
-  </section>
+    <section id="nature" class="section">
+      <h2>طبیعت</h2>
+      <p>جهان طبیعی پر از زیبایی‌های خیره‌کننده است، از جنگل‌های انبوه تا حیات‌وحش بی‌نظیر. طبیعت زیبا به ما یادآوری می‌کند که زندگی ساده و اصیل هم می‌تواند شگفت‌انگیز باشد.</p>
+      <img src="https://source.unsplash.com/800x400/?nature" alt="طبیعت">
+    </section>
 
-  <section id="contact" class="section fade-in">
-    <div class="container">
+    <section id="space" class="section">
+      <h2>نجوم</h2>
+      <p>کاوش در فضا یکی از هیجان‌انگیزترین ماجراجویی‌های بشر است. از سیارات دیگر گرفته تا کهکشان‌های دور، انسان همواره به دنبال کشف رازهای هستی بوده است.</p>
+      <img src="https://source.unsplash.com/800x400/?space" alt="فضا">
+    </section>
+
+    <section id="history" class="section">
+      <h2>تاریخ</h2>
+      <p>مطالعه تاریخ به ما کمک می‌کند تا گذشته را بفهمیم و از اشتباهات گذشته درس بگیریم. تاریخ بشریت پر از داستان‌های شگفت‌انگیز و آموزنده است.</p>
+      <img src="https://source.unsplash.com/800x400/?history" alt="تاریخ">
+    </section>
+
+    <section id="health" class="section">
+      <h2>سلامت</h2>
+      <p>سلامت جسمی و روانی دو ستون اصلی زندگی سالم هستند. ورزش، تغذیه مناسب و آرامش ذهنی می‌توانند کیفیت زندگی را به طور چشمگیری بهبود بخشند.</p>
+      <img src="https://source.unsplash.com/800x400/?health" alt="سلامت">
+    </section>
+
+    <section id="art" class="section">
+      <h2>هنر</h2>
+      <p>هنر راهی برای بیان احساسات انسان است؛ از نقاشی و موسیقی گرفته تا سینما و تئاتر، هنر می‌تواند پیامی از درون انسان‌ها به دنیا ارسال کند.</p>
+      <img src="https://source.unsplash.com/800x400/?art" alt="هنر">
+    </section>
+	<section id="culture" class="section">
+      <h2>فرهنگ</h2>
+      <p>فرهنگ بازتاب‌دهنده باورها، آداب و رسوم، و تاریخ یک ملت است. هر فرهنگی ارزش‌های خاص خود را دارد که در شکل‌دهی به جامعه تأثیرگذار است.</p>
+      <img src="https://source.unsplash.com/800x400/?culture" alt="فرهنگ">
+    </section>
+
+    <section class="contact section">
       <h2>تماس با ما</h2>
-      <p>برای تماس با ما، لطفاً از طریق ایمیل زیر ارتباط برقرار کنید:</p>
-      <p><a href="mailto:info@example.com">info@example.com</a></p>
-    </div>
-  </section>
+      <p>برای ارتباط با ما، با ایمیل زیر تماس بگیرید:</p>
+      <p><strong>amirali.zarei.2689@gmail.com</strong></p>
+    </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 سایت اطلاعات عمومی. تمام حقوق محفوظ است.</p>
+    <p>© تمامی حقوق محفوظ است</p>
   </footer>
-
-  <script>
-    // اسلایدر با جاوااسکریپت
-    let slideIndex = 0;
-    function showSlides() {
-      const slides = document.getElementsByClassName("slide");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3000); // تغییر تصویر هر 3 ثانیه
-    }
-    showSlides();
-  </script>
-
 </body>
 </html>
